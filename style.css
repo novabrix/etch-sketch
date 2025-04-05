@@ -1,0 +1,25 @@
+* {
+  /* border: 2px dotted red; */
+  font-family: ubuntu;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  padding: 300px, 300px;
+  background-color: rgb(194, 162, 121);
+}
+
+div div {
+  background-color: brown;
+  margin: 1px;
+}
+
+div div div {
+  background-color: burlywood;
+  padding: 5px;
+  margin: 1px;
+}
