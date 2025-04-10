@@ -27,12 +27,13 @@ h3, h4 {
 }
 
 .loader {
- /*  border: 1px solid red;
-  display: flex;
-  font-size: 20px;
   padding: 10px;
-  margin-left: 500px;
-  margin-right: 500px; */
+  width: 300px;
+  margin-left: 510px;
+  font-size: large;
+  border: 3px black solid;
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 .container {
@@ -53,6 +54,7 @@ div div {
 
 div div div {
   display: flex;
+  flex: 1;
   background-color: rgb(218, 218, 218);
   padding: 9px;
   margin: 1px;
