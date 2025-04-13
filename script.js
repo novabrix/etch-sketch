@@ -3,23 +3,21 @@ console.log("JavaScript Connected!");
 const container = document.querySelector("div");
 const desc = document.querySelector("h3");
 const body = document.querySelector("body");
-const seniorDiv = document.querySelector("div div");
-const juniorDiv = document.querySelector("div div div");
 
 function defaultGrid() {
-  for (let i = 1; i < 16; i++) {
+  for (let i = 1; i < 21; i++) {
     let holder = document.createElement("div");
-    holder.className = `senior-div ${i}`;
+    holder.className = `senior-div`;
     container.appendChild(holder);
-    for (let i = 1; i < 17; i++) {
+    for (let i = 1; i < 21; i++) {
       let smallHold = document.createElement("div");
-      smallHold.className = `junior-div ${i}`;
+      smallHold.className = `junior-div`;
       smallHold.addEventListener(
         "mouseenter",
         (event) => {
-          event.target.style.backgroundColor = "lightcoral";
+          event.target.style.backgroundColor = "darkslategray";
           setTimeout(() => {
-            event.target.style.backgroundColor = "red";
+            event.target.style.backgroundColor = "black";
           }, 500);
         },
         false
@@ -30,30 +28,40 @@ function defaultGrid() {
 }
 defaultGrid();
 
+
 function deleteGrid () {
-  console.log(seniorDiv, juniorDiv);
-  console.log(container)
+  const slaughter = document.getElementsByClassName("senior-div");
+  console.log(slaughter)
+  slaughter.removeChildren();
+  console.log(slaughter);
 }
 
 function newGrid() {
-  const divMaker = function () {
     let prompter = prompt("Enter the squares per side for the new grid! (Num X Num)");
-    container.classList.add("container");
 
     if (prompter < 41 && prompter > 4) {
       for (let i = 1; i < prompter; i++) {
         let holder = document.createElement("div");
-        holder.className = `senior-div ${i}`;
+        holder.className = `senior-div`;
         container.appendChild(holder);
         for (let i = 1; i < prompter; i++) {
           let smallHold = document.createElement("div");
-          smallHold.className = `junior-div ${i}`;
+          smallHold.className = `junior-div`;
+          if (prompter < 27 && prompter > 19) {
+            smallHold.style.padding = "7px";
+          }
+          if (prompter < 36 && prompter > 26) {
+            smallHold.style.padding = "6px";
+          }
+          if (prompter < 41 && prompter > 35) {
+            smallHold.style.padding = "5px";
+          }
           smallHold.addEventListener(
             "mouseenter",
             (event) => {
-              event.target.style.backgroundColor = "lightcoral";
+              event.target.style.backgroundColor = "darkslategray";
               setTimeout(() => {
-                event.target.style.backgroundColor = "red";
+                event.target.style.backgroundColor = "black";
               }, 500);
             },
             false
@@ -62,10 +70,11 @@ function newGrid() {
         }
       }
     } else {
-      alert("5 - 20 grid sizes allowed only!");
+      alert("5 - 40 grid sizes allowed only!");
     }
-  };
-  divMaker();
 }
-let colors = ['red', 'orange', 'yellow', 'green', 'mediumblue', 'indigo',
+let colors = ['black', 'orange', 'yellow', 'green', 'mediumblue', 'indigo',
    'purple', 'gray', 'pink', 'brown', 'black', 'eraser' ]
+function multicolor(value) {
+
+}

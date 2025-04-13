@@ -55,7 +55,7 @@ h4 {
 
 .junior-div {
   display: flex;
-  flex: 1;
+  flex: auto;
   background-color: rgb(218, 218, 218);
   padding: 9px;
   margin: 1px;
@@ -64,6 +64,11 @@ h4 {
 
 .colors {
   display: flex;
+  justify-content: center;
+  border: 5px solid rgb(58, 35, 14);
+  background-color: rgb(218, 200, 178);
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 .red {
@@ -147,12 +152,13 @@ h4 {
   padding: 22px;
   background-color: black;
   margin: 5px;
-  border: 3px solid white;
+  border: 3px solid rgb(58, 58, 58);
 }
 
 .eraser {
-  padding: 22px;
+  padding: 8px;
   background-color: white;
   margin: 5px;
   border: 3px solid magenta;
+  font-size: 21px;
 }
