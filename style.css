@@ -44,8 +44,7 @@ h4 {
   justify-content: center;
 }
 
-/* Senior Divs */
-div div {
+.senior-div {
   display: flex;
   background-color: rgb(44, 44, 82);
   margin: 0;
@@ -54,12 +53,106 @@ div div {
   margin-bottom: 40px;
 }
 
-/* Junior Divs */
-div div div {
+.junior-div {
   display: flex;
   flex: 1;
   background-color: rgb(218, 218, 218);
   padding: 9px;
   margin: 1px;
   border: 1px solid rgb(146, 146, 146);
+}
+
+.colors {
+  display: flex;
+}
+
+.red {
+  padding: 22px;
+  background-color: red;
+  margin: 5px;
+  border: 3px solid black;
+}
+
+.orange {
+  padding: 22px;
+  background-color: orange;
+  margin: 5px;
+  border: 3px solid black;
+}
+
+.orange {
+  padding: 22px;
+  background-color: orange;
+  margin: 5px;
+  border: 3px solid black;
+}
+
+.yellow {
+  padding: 22px;
+  background-color: yellow;
+  margin: 5px;
+  border: 3px solid black;
+}
+
+.green {
+  padding: 22px;
+  background-color: green;
+  margin: 5px;
+  border: 3px solid black;
+}
+
+.blue {
+  padding: 22px;
+  background-color: mediumblue;
+  margin: 5px;
+  border: 3px solid black;
+}
+
+.indigo {
+  padding: 22px;
+  background-color: rgb(50, 0, 130);
+  margin: 5px;
+  border: 3px solid black;
+}
+
+.violet {
+  padding: 22px;
+  background-color: purple;
+  margin: 5px;
+  border: 3px solid black;
+}
+
+.gray {
+  padding: 22px;
+  background-color: rgb(145, 145, 145);
+  margin: 5px;
+  border: 3px solid black;
+}
+
+.brown {
+  padding: 22px;
+  background-color: rgb(107, 72, 31);
+  margin: 5px;
+  border: 3px solid black;
+}
+
+.pink {
+  padding: 22px;
+  background-color: rgb(255, 96, 229);
+  margin: 5px;
+  border: 3px solid black;
+}
+
+.black {
+  padding: 22px;
+  background-color: black;
+  margin: 5px;
+  border: 3px solid white;
+}
+
+.eraser {
+  padding: 22px;
+  background-color: white;
+  margin: 5px;
+  border: 3px solid magenta;
 }

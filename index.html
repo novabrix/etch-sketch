@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-A-Sketch</title>
-    <link rel = "icon" type = "x/icon" href = "img/favicon.ico">
-    <link rel = "stylesheet" href = "style.css">
-    <script src = "script.js" defer></script>
-</head>
-<body>
+    <link rel="icon" type="x/icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <h1>==/ Etch-A-Sketch /==</h1>
-    <h3 class = "desc">Use your mouse to color the grid below! Size-adjustable.</h3>
-    <button onclick = "newGrid()" class = "loader">!! -Create New Grid- !!</button>
-    <div class = "container"></div>
-    <h4 class = "footer">Created by Idriis Yusuf (novabrix). All rights reserved (for him).</h4>
-</body>
+    <h3 class="desc">
+      Use your mouse to color the grid below! Size-adjustable.
+    </h3>
+    <button onclick="deleteGrid(), newGrid()" class="loader">
+      !! -Create New Grid- !!
+    </button>
+    <span class="colors">
+      <button class="red" onclick="multicolor()"></button>
+      <button class="orange" onclick="multicolor()"></button>
+      <button class="yellow" onclick="multicolor()"></button>
+      <button class="green" onclick="multicolor()"></button>
+      <button class="blue" onclick="multicolor()"></button>
+      <button class="indigo" onclick="multicolor()"></button>
+      <button class="violet" onclick="multicolor()"></button>
+      <button class="gray" onclick="multicolor()"></button>
+      <button class="pink" onclick="multicolor()"></button>
+      <button class="brown" onclick="multicolor()"></button>
+      <button class="black" onclick="multicolor()"></button>
+      <button class="eraser" onclick="multicolor()"></button>
+    </span>
+      <div class="container"></div>
+
+    <h4 class="footer">
+      Created by Idriis Yusuf (novabrix). All rights reserved (for him).
+    </h4>
+  </body>
 </html>
